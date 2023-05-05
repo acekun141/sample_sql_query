@@ -143,7 +143,7 @@ SELECT CONCAT(customers.first_name, ' ', customers.last_name) AS full_name, orde
 FROM customers
 LEFT JOIN orders ON customers.customer_id = orders.customer_id
 LEFT JOIN staffs ON orders.staff_id = staffs.staff_id
-WHERE staffs.last_name = 'Boyer';
+WHERE staffs.first_name = 'Boyer';
 ```
 
 **20. In ra tên nhãn hàng, mã nhãn hàng và tổng số lượng hàng tồn kho còn lại được sắp xếp giảm dần theo số lượng**
